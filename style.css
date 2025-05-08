@@ -1,0 +1,649 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .5px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    padding: 5px;
+    line-height: normal;
+}
+
+h3 {
+    font-weight:900;
+}
+
+.welcome-wedding {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.welcome-text-main {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.welcome-text-date {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.body-content {
+    max-width: 700px;
+    line-height: 30px;
+    background-color: #fff;
+    margin: auto;
+    padding: 0 20px 60px;
+}
+.welcome-text{
+    z-index: 2;
+}
+
+.countdown{
+    display: flex;
+        justify-content: center;
+        gap: 20px;
+}
+.mesure>div:first-of-type {
+    font-size: 60px;
+    line-height: 80px;
+}
+.mesure>div {
+text-align: center;
+min-width: 80px;
+}
+
+.mesure:not(:last-child){
+    position: relative;
+    margin-right: 50px;
+    padding-right: 50px;
+}
+.mesure:not(:last-child):after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    opacity: .2;
+    background: #fff;
+}
+
+.img {
+    width: 84px;
+    /* background-image: url(https://static.tildacdn.com/tild3063-6361-4433-b263-623532323033/011-wedding-car_1.png); */
+    height: 84px;
+    border-radius: 50%;
+    /* background-size: cover;
+background-position: center;
+background-repeat: no-repeat; */
+}
+
+.portrait-photo {
+    width: 300px;
+    object-fit: cover;
+}
+
+.photo-block {
+    height: 100vh;
+}
+
+.filter {
+    filter: opacity(0.3);
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+    background: url("img/portrait.jpg") no-repeat top center / cover;
+    background-attachment: scroll;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    background-position: center;
+}
+
+.line {
+    height: 100px;
+    width: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+.action-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+    column-gap: 10px;
+    grid-template-areas: "imgLine time"
+        "imgLine description"
+    ;
+
+}
+
+.image-line {
+    width: 84px;
+    grid-area: imgLine;
+}
+
+.time {
+    grid-area: time;
+    font-size: 25px;
+    /* align-self: self-end; */
+}
+
+.description {
+    grid-area: description;
+    margin-top: 0%;
+}
+
+.timing-block {
+    margin: 60px auto;
+}
+
+.map-block {
+    margin: 60px auto;
+}
+
+.dress-code{
+    text-align: center;
+}
+
+.organization{
+    text-align: center;
+}
+
+.lena{
+    background: url("img/lena.jpg") no-repeat top center / cover;
+}
+
+.inna{
+    background: url("img/inna.jpg") no-repeat top center / cover;
+}
+
+.section-block {
+    margin: 60px auto;
+}
+
+.wishes-block {}
+
+
+
+.color {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.org {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.colors {
+    display: flex;
+    gap: 49px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.men{
+    gap: 20px
+}
+
+.orgs {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: center;
+
+}
+.transfer-descr{
+    max-width: 500px;
+    margin: auto;
+}
+.transfer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+.transfer-descr p{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.map{
+    max-width: 600px;
+width: 100%;
+height: 400px;
+margin: auto;
+    background: url("img/location.jpg");
+}
+.orgs a{
+    text-decoration: none;
+    margin-top: 5px;
+}
+.orgs p{
+    margin-top: 5px;
+}
+.orgs div{
+    margin: auto;
+}
+
+.wishes p{
+    margin-bottom: 15px;
+}
+
+.peach {
+    background-color: #C0C0C0;
+}
+
+.silver {
+    background: #ccc;
+    background-image:
+      linear-gradient(45deg, rgba(255, 255, 255, 0.5) 30%, rgba(0, 0, 0, 0.5) 70%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.3) 20%, rgba(0, 0, 0, 0.3) 80%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавляем небольшую тень для объёма */
+}
+
+.bordo {
+    background-color: #9b2d30;
+}
+
+.green {
+    background-color: #cad2b7;
+}
+
+.skin {
+    background-color: #e7d6c4;
+}
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.black {
+    background-color: black;
+}
+
+.gray {
+    background-color: #7e7d82;
+}
+
+.ligth-gray {
+    background-color: #e2e0e6;
+}
+
+.white {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+
+
+@media((min-width:320px) and (max-width:767px)) {
+.body-content {
+    max-width: 700px;
+    line-height: 30px;
+    background-color: #fff;
+}
+
+.colors {
+    gap: 13px;
+}
+
+.welcome {
+    background-attachment: scroll;
+}
+
+*{
+    font-size: 15px;
+}
+
+.welcome-text-main {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.welcome-text-date {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.action-item {
+
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; */
+    gap: 0;
+    column-gap: 10px;
+    grid-template-areas: "imgLine time"
+        "imgLine description"
+    ;
+
+}
+
+.line {
+    height: 100px;
+}
+
+.countdown{
+    display: flex;
+        justify-content: center;
+        gap: 0px;
+}
+.mesure>div:first-of-type {
+    font-size: 30px;
+    line-height: 50px;
+}
+.mesure>div {
+text-align: center;
+}
+
+.mesure:not(:last-child){
+    position: relative;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+}
+
+@media((min-width:768px) and (max-width:1344px)) {
+.body-content {
+    max-width: 700px;
+    line-height: 30px;
+    background-color: #fff;
+}
+
+.time {
+    grid-area: time;
+    font-size: 25px;
+    align-self: self-start;
+}
+
+.welcome-text-main {
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.welcome-text-date {
+    text-align: center;
+    font-size: 25px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+.action-item {
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: "time imgLine description";
+}
+}
+
+@media((min-width:1335px)){
+.body-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px 60px;
+}
+
+.welcome {
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.welcome-text-main {
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.welcome-text-date {
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: normal;
+}
+
+.action-item {
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: "time imgLine description";
+}
+
+.line {
+    height: 50px;
+    width: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+.time {
+    grid-area: time;
+    font-size: 25px;
+    align-self: self-start;
+}
+
+}
+
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+
+    height: 100vh;
+
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    display: table;
+  }
+
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+  }
+
+  .main-slide > div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  button:hover {
+    color: #222;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .container .controls button {
+    position: absolute;
+    z-index: 100;
+    /* top: calc(50% - 25px); */
+    height: 100%;
+    background: #333;
+    color: #fff;
+    opacity: 30%;
+    box-shadow: 0 10px 20px rgba(0, 0,0)
+  }
+  .container .controls .right-button {
+    right:0;
+  }
+
+
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .sidebar p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 35px;
+  }
+  .left-button:before, .right-button:before {
+    font-size: 40px; /* Размер стрелок */
+
+  }
+
+  .left-button:before {
+    content: '←'; /* Лаконичная левая стрелка */
+  }
+
+  .right-button:before {
+    content: '→'; /* Приятная правая стрелка */
+  }
